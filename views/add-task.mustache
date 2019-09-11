@@ -1,0 +1,31 @@
+<html>
+<head>
+     {{> header}}
+
+</head>
+
+<body>
+
+        <h1>Add Task</h1>
+
+    <div class="container">
+
+    {{> menu}}
+
+<form action='/dashboard/add-task' method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Task:</label>
+    <input type="text" name="task" class="form-control" placeholder="type the task here">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Add</button>
+    
+
+</form>
+</div>
+
+    {{> footer}}
+        
+</body>
+
+</html>

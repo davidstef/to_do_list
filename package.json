@@ -1,0 +1,23 @@
+{
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "engines": "^0.4.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "mustache": "^3.0.3",
+    "mustache-express": "^1.2.8",
+    "node": "^12.9.1",
+    "pg-promise": "^9.1.2"
+  }
+}
