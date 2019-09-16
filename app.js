@@ -23,6 +23,7 @@ app.set('views', VIEWS_PATH);
 app.set('view engine', 'mustache');
 
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static('public'))
 
 app.use((req,res,next) => {
     res.locals.authenticated = req.session.user == null ? false : true

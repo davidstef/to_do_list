@@ -30,10 +30,20 @@
 </div>
 
     {{> footer}}
+
+  <div class="pagination">
+  
+  <a href="{{prev_page}}">&laquo;</a>
+  {{#pages}}
+  <a href="{{pageURL}}?page={{.}}">{{.}}</a>
+  {{/pages}}
+  <a href="{{next_page}}">&raquo;</a>
+
+</div>
+
       <script>
-      
+
       function sortData(checkbox,listid){
-      console.log(listid,checkbox.checked)
       var xhr = new XMLHttpRequest()
       xhr.open('PATCH','http://localhost:3000/dashboard/checked-tasks/'+listid,true)
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
@@ -50,7 +60,6 @@
     }
 
       function deleteData(listid){
-        console.log(listid)
         var xhr = new XMLHttpRequest()
         xhr.open('DELETE','http://localhost:3000/dashboard/delete-task/'+listid,true)
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
@@ -66,8 +75,6 @@
       }
     }
    
-
-      
       </script>
 </body>
 

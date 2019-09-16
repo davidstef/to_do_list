@@ -1,16 +1,8 @@
-h4 {
-  text-decoration: line-through;
-}
-
 input[type=checkbox] + label {
     display: block;
     margin: 0.2em;
     cursor: pointer;
     padding: 0.2em;
-  }
-  
-  input[type=checkbox] {
-    display: none;
   }
   
   input[type=checkbox] + label:before {
